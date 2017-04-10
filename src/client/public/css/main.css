@@ -1,0 +1,209 @@
+/*********************
+VARIABLES
+*********************/
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,800);
+/* ;-) */
+/*********************
+BREAKPOINTS
+*********************/
+body {
+  font-size: 16px;
+}
+body h1 {
+  color: #2c3e50;
+  font-weight: 800;
+}
+body h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+body label {
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-size: 0.750em;
+  font-weight: 400;
+}
+body form {
+  font-family: "Merriweather", serif;
+}
+body form input, body form select {
+  color: #000000;
+  font-weight: 400;
+  border: 1px solid #c3c4c3;
+  border-radius: 0.25em 0.25em 0.25em 0.25em;
+  -moz-border-radius: 0.25em 0.25em 0.25em 0.25em;
+  -webkit-border-radius: 0.25em 0.25em 0.25em 0.25em;
+  padding: 0.25em;
+  margin: 0 0 0.5em 0;
+  width: 100%;
+}
+body form input[type=button] {
+  background: #627b8b;
+  border: 1px solid #627b8b;
+  border-bottom: 2px solid #3f515d;
+  color: #ffffff;
+  width: 95%;
+  padding: 0.5em 0;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+}
+body form input[type=button]:hover {
+  background: #3f515d;
+}
+body form input[type=button]:focus {
+  outline: 0;
+}
+body form input[type="submit"] {
+  background: #3498db;
+  border: 1px solid #3498db;
+  border-bottom: 2px solid #2980b9;
+  color: #ffffff;
+  width: 95%;
+  padding: 0.5em 0;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+}
+body form input[type="submit"]:hover {
+  background: #2980b9;
+}
+body form input[type="submit"]:focus {
+  outline: 0;
+}
+
+body #entry {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+body #entry .row {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #entry .row .inputs {
+  background: #ffffff;
+  margin: 0;
+  padding: 0 1em;
+  transform: translateY(-50%);
+  top: 50%;
+}
+@media (min-width: 60.063em) {
+  body #entry .row .inputs {
+    padding: 0 2em 0 5em;
+  }
+}
+body #entry .row .inputs .sub-heading {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #b0b8bc;
+  text-transform: uppercase;
+  font-size: 0.625em;
+  font-weight: 700;
+  border-bottom: 1px solid #b0b8bc;
+  margin: 2em 1em;
+  padding: 0;
+  width: 95%;
+}
+body #entry .row .inputs #imgUpload {
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+  height: auto;
+}
+body #entry .row .inputs .avatarImg {
+  margin: 1em;
+  display: inline-block;
+}
+body #entry .row .inputs .avatarImg input {
+  display: inline-block;
+}
+body #entry .row .inputs .avatarImg input:focus {
+  outline: 0;
+}
+body #entry .row .inputs .avatarImg input[type="file"] {
+  width: 75%;
+}
+body #entry .row .inputs .avatarImg input[type="submit"] {
+  width: 20%;
+  float: right;
+}
+
+body .display {
+  background: #e1e4e7;
+  height: 100%;
+  position: relative;
+}
+body .display .card {
+  background: #ffffff;
+  border-bottom: 2px solid #9a9a9a;
+  max-width: 400px;
+  width: 100%;
+  padding: 0 0 2em 0;
+  margin: 0 auto;
+}
+@media (min-width: 60.063em) {
+  body .display .card {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    margin-left: 2em;
+  }
+}
+body .display .card h2 {
+  text-align: right;
+  margin: 0;
+  padding: 0.5em;
+  background: #e1e4e7;
+}
+body .display .card .header {
+  background: #2c3e50;
+  height: 5em;
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  padding: 1em;
+}
+body .display .card .header .fullname {
+  position: absolute;
+  bottom: 1em;
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+}
+body .display .card .header #avatar {
+  float: right;
+  border: 1px solid #e1e4e7;
+  width: 60px;
+  height: 80px;
+}
+body .display .card .header #avatar img {
+  width: 100%;
+}
+body .display .card .body {
+  padding: 1em;
+}
+body .display .card .body div {
+  border-bottom: 1px solid #b0b8bc;
+  padding: 0.25em;
+  font-size: 1em;
+  min-height: 2em;
+  display: block;
+  font-family: "Merriweather", serif;
+}
+body .display .card .body div label {
+  margin-right: 0.5em;
+  font-size: 0.625em;
+  font-family: "Merriweather Sans", sans-serif;
+  line-height: 2em;
+  margin-bottom: 0;
+}

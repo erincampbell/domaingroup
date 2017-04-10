@@ -1,0 +1,41 @@
+/*********************
+VARIABLES
+*********************/
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,800);
+$Merriweather_sans: 'Merriweather Sans', sans-serif;
+$Merriweather: 'Merriweather', serif;
+$copy_font_family:  300 16px 'Montserrat', sans-serif;
+
+// Colours
+$white: #ffffff;
+$black: #000000;
+$grey: #e1e4e7;
+$light_grey: #b0b8bc;
+$dark_grey: #9a9a9a;
+$blue_steel:#2c3e50; /* ;-) */
+
+/*********************
+BREAKPOINTS
+*********************/
+
+ @mixin breakpoint($point) {
+  @if $point == large {
+     @media (min-width:80.063em) { @content ; }
+  }
+  @else if $point == desktop {
+     @media (min-width:64.063em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width:60.063em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width:40.063em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width:30.063em)  { @content ; }
+  }
+  @else if $point == mobile {
+     @media (min-width:20em)  { @content ; }
+  }
+}

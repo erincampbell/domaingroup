@@ -1,0 +1,62 @@
+body{
+
+	label{
+		font-family:$Merriweather_sans;
+		text-transform: uppercase;
+		color:$blue_steel;
+		font-size:0.750em;
+		font-weight:400;
+	}
+
+	form{
+		font-family: $Merriweather;
+
+		input, select{
+			color:$black;
+			font-weight:400;
+			border:1px solid #c3c4c3;
+			border-radius: 0.25em 0.25em 0.25em 0.25em;
+			-moz-border-radius: 0.25em 0.25em 0.25em 0.25em;
+			-webkit-border-radius: 0.25em 0.25em 0.25em 0.25em;
+			padding:0.25em;
+			margin:0 0 0.5em 0;
+			width:100%;
+		}
+
+		input[type=button]{
+			background:#627b8b;
+			border:1px solid #627b8b;
+			border-bottom:2px solid #3f515d;
+			color:$white;
+			width:95%;
+			padding:0.5em 0;
+			font-family:$Merriweather_sans;
+			font-size:1em;
+			margin-top:1em;
+
+			&:hover{
+				background: #3f515d;
+			}
+
+			&:focus {outline:0;}
+		}
+
+		input[type="submit"]{
+			background:#3498db;
+			border:1px solid #3498db;
+			border-bottom:2px solid #2980b9;
+			color:$white;
+			width:95%;
+			padding:0.5em 0;
+			font-family:$Merriweather_sans;
+			font-size:1em;
+			margin-top:1em;
+
+			&:hover{
+				background: #2980b9;
+			}
+
+			&:focus {outline:0;}
+		}
+	}
+}

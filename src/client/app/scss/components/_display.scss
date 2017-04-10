@@ -1,0 +1,80 @@
+body{
+
+	.display{
+		background:$grey;
+		height: 100%;
+		position:relative;
+
+		.card{
+			background:$white;
+			border-bottom:2px solid $dark_grey;
+			max-width:400px;
+			width:100%;
+			padding:0 0 2em 0;
+			margin:0 auto;
+
+			@include breakpoint(laptop) {
+				transform:translateY(-50%);
+				top:50%;
+				position:absolute;
+				margin-left:2em;
+			}
+
+			h2{
+				text-align:right;
+				margin:0;
+				padding:0.5em;
+				background:$grey;
+			}
+
+			.header{
+				background:$blue_steel;
+				height:5em;
+				width:100%;
+				color:$white;
+				position:relative;
+				padding:1em;
+
+				.fullname{
+					position:absolute;
+					bottom:1em;
+					font-family: $Merriweather;
+					text-transform: capitalize;
+				}
+
+				#avatar{
+					float:right;
+					border:1px solid $grey;
+					width:60px;
+					height:80px;
+
+					img{
+						width:100%;
+					}
+				}
+			}
+
+			.body{
+				padding:1em;
+
+				div{
+					border-bottom:1px solid $light_grey;
+					padding:0.25em;
+					font-size:1em;
+					min-height:2em;
+					display: block;
+					font-family: $Merriweather;
+
+					label{
+						margin-right:0.5em;
+						font-size:0.625em;
+						font-family:$Merriweather_sans;
+						line-height:2em;
+						margin-bottom:0;
+					}
+				}
+			}
+		}
+	}
+	
+}
